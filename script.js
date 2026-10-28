@@ -2,7 +2,7 @@ let listitem = document.getElementById("infi-list");
 
 let itemcount = 0
 
-function listitem() {
+function createlistitem() {
     itemcount++
 
     let li = document.createElement("li")
@@ -17,7 +17,7 @@ for(let i = 0; i < 10; i++) {
 }
 
 listitem.addEventListener( "scroll", function () {
-    if(listitem.scrollTop + listitem.clientHeight >= listitem.scrollHeight - 2) {
+    if(listitem.scrollTop + listitem.clientHeight >= listitem.scrollHeight) {
         createlistItem()
         createlistItem()
     }
