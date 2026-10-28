@@ -13,12 +13,12 @@ function listitem() {
 }
 
 for(let i = 0; i < 10; i++) {
-    createListItem()
+    createlistItem()
 }
 
 listitem.addEventListener( "scroll", function () {
     if(listitem.scrollTop + listitem.clientHeight >= listitem.scrollHeight - 2) {
-        createListItem()
-        createListItem()
+        createlistItem()
+        createlistItem()
     }
 })
